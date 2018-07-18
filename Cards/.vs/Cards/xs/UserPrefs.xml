@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{2C7981B9-FB9C-4929-9671-1A4C199085FA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CardsIOS/ViewControllers/SideMenuViewController.cs">
+    <Files>
+      <File FileName="CardsIOS/ViewControllers/SideMenuViewController.cs" Line="89" Column="11" />
+      <File FileName="CardsIOS/Main.storyboard" />
+      <File FileName="CardsIOS/ViewControllers/ViewController.cs" Line="62" Column="87" />
+      <File FileName="CardsIOS/ViewControllers/RootMyCardViewController.cs" Line="21" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/admin/Documents/GitHub/Cards/Cards/ViewController.cs" relfile="Cards/ViewController.cs" line="15" column="1" />
+      <Breakpoint file="/Users/admin/Documents/GitHub/Cards/Cards/SplashViewController.cs" relfile="Cards/SplashViewController.cs" line="14" column="1" />
+      <Breakpoint file="/Users/admin/Documents/GitHub/Cards/Cards/ViewControllers/SplashViewController.cs" relfile="Cards/ViewControllers/SplashViewController.cs" line="14" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CardsIOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8436906F-2030-4142-B7AB-B1A7D0C1345F" automaticSigning="False" />
+</Properties>

@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SidebarNavigation</name>
+    </assembly>
+    <members>
+        <member name="T:SidebarNavigation.Sidebar.SlideoutPanDelegate">
+            <summary>
+            Default pan gesture delegate used to start menu sliding
+            when appropriate.
+            </summary>
+        </member>
+        <member name="M:SidebarNavigation.SidebarContentArea.TouchInActiveArea(UIKit.UITouch,SidebarNavigation.Sidebar)">
+            <summary>
+            Returns whether a certain touch is within the area that should
+            activate the pan gesture sliding out the menu.
+            </summary>
+            <param name="touch"></param>
+            <param name="sidebar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.#ctor(System.IntPtr)">
+            <summary>
+            Required contructor.
+            </summary>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.#ctor(UIKit.UIViewController,UIKit.UIViewController,UIKit.UIViewController)">
+            <summary>
+            Contructor.
+            </summary>
+            <param name="rootViewController">
+            The view controller that the Sidebar is being added to.
+            </param>
+            <param name="contentViewController">
+            The view controller for the content area.
+            </param>
+            <param name="menuViewController">
+            The view controller for the side menu.
+            </param>
+        </member>
+        <member name="E:SidebarNavigation.SidebarController.StateChangeHandler">
+            <summary>
+            This Event will be called when the Sidebar menu is Opened/Closed (at the end of the animation).
+            The Event Arg is a Boolean = isOpen.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.ContentAreaController">
+            <summary>
+            The view controller shown in the content area.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.MenuAreaController">
+            <summary>
+            The view controller for the side menu.
+            This is what will be shown when the menu is displayed.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.Sidebar">
+            <summary>
+            Exposes the underlying sidebar object
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.FlingPercentage">
+            <summary>
+            Determines the percent of width to complete slide action.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.FlingVelocity">
+            <summary>
+            Determines the minimum velocity considered a "fling" to complete slide action.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.GestureActiveArea">
+            <summary>
+            Active area where the Pan gesture is intercepted.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.HasShadowing">
+            <summary>
+            Gets or sets a value indicating whether there should be shadowing effects on the content view.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.ShadowOpacity">
+            <summary>
+            Gets or sets the shadow opacity.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.ShadowColor">
+            <summary>
+            Gets or sets the color of the shadow.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.ShadowRadius">
+            <summary>
+            Gets or sets the shadow radius.
+            </summary>
+            <value>The shadow radius.</value>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.HasDarkOverlay">
+            <summary>
+            Gets or sets a value indicating whether there should be a dark overlay effect on the content view.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.DarkOverlayAlpha">
+            <summary>
+            Gets or sets a value indicating the dark overlay alpha.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.ReopenOnRotate">
+            <summary>
+            Determines if the menu should be reopened after the screen is roated.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.MenuWidth">
+            <summary>
+            Determines the width of the menu when open.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.MenuLocation">
+            <summary>
+            Determines if the menu is on the left or right of the screen.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.Disabled">
+            <summary>
+            Disables all open/close actions when set to true.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.DisablePanGesture">
+            <summary>
+            Gets or sets a value indicating whether the pan gesture is disabled.
+            </summary>
+        </member>
+        <member name="P:SidebarNavigation.SidebarController.IsOpen">
+            <summary>
+            Gets the current state of the menu.
+            Setting this property will open/close the menu respectively.
+            </summary>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.ToggleMenu">
+            <summary>
+            Toggles the menu open or closed.
+            </summary>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.OpenMenu">
+            <summary>
+            Shows the slideout navigation menu.
+            </summary>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.CloseMenu(System.Boolean)">
+            <summary>
+            Hides the slideout navigation menu.
+            </summary>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.ChangeContentView(UIKit.UIViewController)">
+            <summary>
+            Replaces the content area view controller with the specified view controller.
+            </summary>
+            <param name="newContentView">
+            New content view.
+            </param>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.ChangeMenuView(UIKit.UIViewController)">
+            <summary>
+            Replaces the menu area view controller with the specified view controller.
+            </summary>
+            <param name="newMenuView">
+            New menu view.
+            </param>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.ViewDidLayoutSubviews">
+            <summary>
+            Ensures that the menu view gets properly positioned.
+            </summary>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.ViewWillAppear(System.Boolean)">
+            <summary>
+            Ensures that the menu view gets properly positioned.
+            </summary>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.WillRotate(UIKit.UIInterfaceOrientation,System.Double)">
+            <summary>
+            Overridden to handle reopening the menu after rotation.
+            </summary>
+        </member>
+        <member name="M:SidebarNavigation.SidebarController.DidRotate(UIKit.UIInterfaceOrientation)">
+            <summary>
+            Overridden to handle reopening the menu after rotation.
+            </summary>
+        </member>
+    </members>
+</doc>
